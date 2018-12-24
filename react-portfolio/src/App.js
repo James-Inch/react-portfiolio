@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+
 
 
 class App extends Component {
@@ -13,8 +16,8 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={About} />
-            <Route />
-            <Route />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/portfolio" component={Portfolio} />
           </Switch>
         </div>
       </Router>
