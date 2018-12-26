@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-
+import BackGround from "./components/BackGround";
 
 
 class App extends Component {
@@ -14,6 +14,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
+          <BackGround />
           <Switch>
             <Route exact path="/" component={About} />
             <Route exact path="/contact" component={Contact} />
