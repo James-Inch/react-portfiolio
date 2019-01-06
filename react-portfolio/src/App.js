@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import BackGround from "./components/BackGround";
+import Wrapper from "./components/Wrapper"
 
 
 class App extends Component {
@@ -14,12 +14,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
-          <BackGround />
-          <Switch>
+          <Wrapper>
             <Route exact path="/" component={About} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/portfolio" component={Portfolio} />
-          </Switch>
+          </Wrapper>
         </div>
       </Router>
     );
