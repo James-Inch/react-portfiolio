@@ -4,6 +4,6 @@ section.sec1 {
     background: url(./images/BackGroundImg.png);
     background-size: cover;
     background-position: center;
-    position: relative;
-    z-index: -2;
+    position: absolute;
+    z-index: -1;
 }

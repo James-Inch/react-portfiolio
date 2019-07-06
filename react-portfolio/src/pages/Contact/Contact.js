@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css"
 
 const Contact = () => (
-    <header>Contact</header>     
+    <header><h1>Contact</h1></header>     
 );
 
 export default Contact; 
